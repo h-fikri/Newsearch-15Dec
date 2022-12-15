@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News!</title>
+</head>
+
+<body>
+	<header></header>
+	<main>
+		<form action="" method="get">
+			<fieldset>
+				<legend>Search Parameters</legend>
+				<p>
+					<label for="search-term">
+						Search Term:
+					</label>
+					<input type="text" name="search-term" id="search-term">
+				</p>
+				<p>
+					<label for="number-of-records">
+						Number of Records to Retrieve:
+					</label>
+					<select name="number-of-records" id="number-of-records">
+						<option selected value="1">1</option>
+						<!-- Setting the option for 5 as default -->
+						<option value="5" selected>5</option>
+						<option value="10">10</option>
+					</select>
+				</p>
+				<p>
+					<label for="start">
+						Start year (Optional):
+					</label>
+					<input type="text" name="start" id="start">
+				</p>
+				<p>
+					<label for="end">
+						End Year (optional):
+					</label>
+					<input type="text" name="end" id="end">
+				</p>
+				<p>
+					<button type="submit" id="search">🔍 Search</button>
+					<button id="clear">🗑️ Clear Results</button>
+				</p>
+				<div id="articles-container">
+					Top Articles
+				</div>
+
+			</fieldset>
+		</form>
+	</main>
+	<footer></footer>
+
+	<!-- SCRIPTS -->
+	<!-- #JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.6.2.min.js"
+		integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA="
+		crossorigin="anonymous"></script>
+	<!-- #JQUERY UI -->
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+		integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
+		crossorigin="anonymous"></script>
+	<!-- JS  -->
+
+
+
+</body>
+
+</html>
