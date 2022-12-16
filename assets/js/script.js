@@ -1,5 +1,5 @@
 $('form').on('submit', function (event) {
-	event.event.preventDefault();
+	event.preventDefault();
 
 	let searchParameter = $('#search-term').val();
 	let NumberOfRecords = $('#number-of-records').val();
@@ -7,6 +7,4 @@ $('form').on('submit', function (event) {
 	let endYear = $('#end').val();
 
 	let searchButton = $('#search');
-
-	console.log(searchParameter);
 });
